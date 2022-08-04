@@ -1,15 +1,15 @@
 function updateVideo() {
-  const id = 'j8smPfMoc6g'
+  const videoId = 'j8smPfMoc6g'
 
   //get video detail
   const video = YouTube.Videos.list('snippet', {
-      id: id
+      id: videoId
     })
   const videoSnippet = video.items[0].snippet;
 
   //get view count
   const viewCount = YouTube.Videos.list('statistics', {
-    id: id
+    id: videoId
   }).items[0].statistics.viewCount;
 
 
@@ -19,7 +19,7 @@ function updateVideo() {
   //update video
   try {
     const update = YouTube.Videos.update({
-      id: id,
+      id: videoId,
       snippet: payload
     }, 'snippet')
     Logger.log(`Judul baru = ${update.snippet.title}`)
