@@ -2,7 +2,8 @@
 
 1. Open https://www.google.com/script/start/
 2. Start scripting
-3. edit all kode.gs with app.gs
-4. edit your video ID
-5. set cron job
-6. dah kelar
+3. press + on service then search Youtube V3 then add
+4. edit all kode.gs with app.gs
+5. edit your video ID
+6. set cron job
+7. dah kelar
