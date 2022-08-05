@@ -20,7 +20,7 @@ function updateVideo() {
   try {
     const update = YouTube.Videos.update({
       id: videoId,
-      snippet: payload
+      snippet: videoSnippet
     }, 'snippet')
     Logger.log(`Judul baru = ${update.snippet.title}`)
   } catch (err) {
